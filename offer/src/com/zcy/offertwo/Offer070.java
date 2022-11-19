@@ -1,0 +1,11 @@
+package com.zcy.offertwo;
+
+public class Offer070 {
+    public int singleNonDuplicate(int[] nums) {
+        int res = 0;
+        for(int i = 0;i < nums.length;i++){
+            res^=nums[i];
+        }
+        return res;
+    }
+}
